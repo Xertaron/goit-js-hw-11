@@ -83,7 +83,7 @@ async function getCard() {
   try {
     const response = await axios.get('https://pixabay.com/api/', {
       params: {
-        key: '37045693-8aefe551e2e8551a000bf542b',
+        key: '38161796-6c90593725f00dcf882dd20e0',
         q: `${searchValue}`,
         image_type: 'photo',
         orientation: 'horizontal',
@@ -107,49 +107,12 @@ async function getCard() {
 
 body.onscroll = function () {
   if (window.scrollY > document.body.offsetHeight - window.outerHeight) {
-    console.log('Infinite Scrolling Enabled!');
     loaderStart();
     body.style.height = document.body.offsetHeight;
     onLoadMoreCards(search);
     loaderStop();
   }
 };
-
-// let isLoading = true;
-
-// const condition = {
-//   hide(element) {
-//     element.classList.add('is-hidden');
-//   },
-//   show(element) {
-//     element.classList.remove('is-hidden');
-//   },
-// };
-
-// const searching = searchBtn.addEventListener('change', onSelectChange);
-
-// function onSelectChange() {
-//   if (isLoading) {
-//     isLoading = false;
-//     return;
-//   }
-
-//   const breedId = input.value;
-
-//   condition.hide(gallery);
-//   condition.show(loader);
-
-//   createGalleryCards(breedId)
-//     .then(condition.show(loader))
-//     .catch(onError)
-//     .finally(() => {
-//       condition.hide(loader);
-//     });
-// }
-
-// gallery.innerHTML = markup;
-
-// condition.show(gallery);
 
 function loaderStart() {
   body.classList.add('loading');
@@ -164,7 +127,5 @@ function loaderStop() {
 loaderStart();
 
 window.addEventListener('load', () => {
-  console.log('All resources finished loading!');
-
   loaderStop();
 });
