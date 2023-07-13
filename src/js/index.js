@@ -34,7 +34,7 @@ function onBtnSearch(e) {
       loadMoreBtn.style.display = 'none';
     }
     gallery.innerHTML = createGalleryCards(cardData);
-    gallery.style.marginTop = '0px';
+    gallery.style.marginTop = '60px';
     gallery.style.display = 'flex';
     lightbox.refresh();
 
