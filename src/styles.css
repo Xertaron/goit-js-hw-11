@@ -33,6 +33,7 @@ input:focus-within {
   display: flex;
   justify-content: center;
   background: rgb(240, 146, 146);
+  z-index: 4;
 }
 
 .search-btn {
