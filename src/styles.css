@@ -18,7 +18,6 @@ input {
   padding: 0 10px;
   font-size: 30px;
   border: none;
-  z-index: 5;
   position: fixed;
 }
 input:focus-within {
@@ -34,7 +33,6 @@ input:focus-within {
   display: flex;
   justify-content: center;
   background: rgb(240, 146, 146);
-  z-index: 6;
 }
 
 .search-btn {
@@ -48,7 +46,6 @@ input:focus-within {
   margin-top: 0.2vw;
   margin-left: 19vw;
   background: none;
-  z-index: 5;
   position: fixed;
 }
 
