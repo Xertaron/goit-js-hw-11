@@ -32,6 +32,7 @@ input:focus-within {
   padding: 10px 0;
   display: flex;
   justify-content: center;
+  z-index: 1;
   background: linear-gradient(
     to right,
     rgb(255, 200, 184),
