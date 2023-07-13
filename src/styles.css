@@ -18,6 +18,8 @@ input {
   padding: 0 10px;
   font-size: 30px;
   border: none;
+  z-index: 5;
+  position: fixed;
 }
 input:focus-within {
   outline: none;
@@ -31,9 +33,10 @@ input:focus-within {
   padding: 10px 0;
   display: flex;
   justify-content: center;
-  z-index: 1;
-  background: #f09292;
+  background: rgb(240, 146, 146);
+  z-index: 6;
 }
+
 .search-btn {
   border-radius: 4px;
   font-weight: 700;
@@ -45,6 +48,8 @@ input:focus-within {
   margin-top: 0.2vw;
   margin-left: 19vw;
   background: none;
+  z-index: 5;
+  position: fixed;
 }
 
 .gallery {
@@ -60,6 +65,7 @@ input:focus-within {
     rgb(123, 201, 123)
   );
   background-blend-mode: darken;
+  z-index: 3;
 }
 
 .photo-card {

@@ -3,7 +3,7 @@ import Notiflix from 'notiflix';
 import simpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { createGalleryCards } from './gallery-card';
-
+const form = document.querySelector('.search-form');
 const input = document.querySelector('[name="searchQuery"]');
 const searchBtn = document.querySelector('[type="submit"]');
 const gallery = document.querySelector('.gallery');
@@ -11,6 +11,7 @@ const loadMoreBtn = document.querySelector('.load-more');
 const body = document.querySelector('body');
 const loader = document.querySelector('.loader-container');
 
+gallery.style.display = 'none';
 let cardPage = null;
 let totalHits = null;
 let searchValue = null;
@@ -30,9 +31,9 @@ function onBtnSearch(e) {
       gallery.innerHTML = '';
       loadMoreBtn.style.display = 'none';
     }
-
     gallery.innerHTML = createGalleryCards(cardData);
     gallery.style.marginTop = '60px';
+    gallery.style.display = 'flex';
     lightbox.refresh();
 
     window.scrollTo({
