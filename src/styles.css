@@ -39,14 +39,14 @@ input:focus-within {
 .search-btn {
   border-radius: 4px;
   font-weight: 700;
-  color: white;
-  border: none;
-  position: inherit;
+  border-color: rgb(166, 194, 255);
+  border-radius: 50%;
+  background-color: rgb(166, 194, 255);
   display: inline-flex;
   justify-content: flex-end;
-  margin-top: 0.2vw;
+  margin-top: 0.1vw;
   margin-left: 19vw;
-  background: none;
+
   position: fixed;
 }
 
@@ -208,8 +208,8 @@ input:focus-within {
 }
 .icon {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 27px;
   stroke-width: 0;
   stroke: rgb(54, 53, 53);
   fill: rgb(54, 53, 53);
