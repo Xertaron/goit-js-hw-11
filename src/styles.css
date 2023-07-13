@@ -32,21 +32,19 @@ input:focus-within {
   display: flex;
   justify-content: center;
   z-index: 1;
-  background: linear-gradient(
-    to right,
-    rgb(255, 200, 184),
-    rgb(250, 220, 185),
-    rgb(238, 238, 171)
-  );
+  background: #f09292;
 }
 .search-btn {
   border-radius: 4px;
   font-weight: 700;
-  background-color: rgb(78, 193, 247);
   color: white;
-  margin-left: 20px;
-  padding: 0 15px;
   border: none;
+  position: inherit;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-top: 0.2vw;
+  margin-left: 19vw;
+  background: none;
 }
 
 .gallery {
@@ -114,6 +112,7 @@ input:focus-within {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .loaded_hiding .loader-container {
@@ -202,4 +201,12 @@ input:focus-within {
   87% {
     box-shadow: 0.2em -0.2em 0 0 currentcolor;
   }
+}
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  stroke-width: 0;
+  stroke: rgb(54, 53, 53);
+  fill: rgb(54, 53, 53);
 }
