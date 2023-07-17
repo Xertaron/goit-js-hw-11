@@ -116,6 +116,22 @@ body.onscroll = function () {
   }
 };
 
+window.addEventListener('scroll', () => {
+  const verticalScrollPx = window.scrollY || window.pageYOffset;
+
+  if (verticalScrollPx < 1000) {
+    form.style.backgroundColor = 'rgb(240, 147, 147)';
+  } else if (verticalScrollPx > 1000 && verticalScrollPx < 2000) {
+    form.style.backgroundColor = 'rgb(190, 190, 190)';
+  } else if (verticalScrollPx > 2000 && verticalScrollPx < 6000) {
+    form.style.backgroundColor = 'rgb(159, 159, 248)';
+  } else if (verticalScrollPx > 6000 && verticalScrollPx < 12000) {
+    form.style.backgroundColor = 'rgb(245, 245, 155)';
+  } else {
+    form.style.backgroundColor = 'rgb(123, 201, 123)';
+  }
+});
+
 function loaderStart() {
   body.classList.add('loading');
 }
@@ -131,3 +147,4 @@ loaderStart();
 window.addEventListener('load', () => {
   loaderStop();
 });
+console.log(form);
