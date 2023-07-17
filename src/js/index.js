@@ -147,4 +147,3 @@ loaderStart();
 window.addEventListener('load', () => {
   loaderStop();
 });
-console.log(form);
